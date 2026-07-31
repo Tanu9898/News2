@@ -11,11 +11,16 @@
     <!-- Simple Header -->
     <header class="simple-header">
         <div class="header-container">
-            <a href="./" class="logo">NewsDaily<span class="dot">.</span></a>
-            <nav class="simple-nav">
-                <a href="./" class="active">HOME</a>
-                <a href="blog">BLOG</a>
-                <a href="contact">CONTACT US</a>
+            <a href="index.html" class="logo">NewsDaily<span class="dot">.</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="simple-nav" id="nav-menu">
+                <a href="index.html" class="active">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="contact.html">CONTACT US</a>
             </nav>
         </div>
     </header>
@@ -28,8 +33,8 @@
             <!-- Left Column -->
             <div class="column-left">
                 <article class="news-item">
-                    <a href="blog-1"><img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News"></a>
-                    <h2 class="title-medium"><a href="blog-1">Government closes major protest cases with caveat: 'No protection for those...'</a></h2>
+                    <a href="blog-1.html"><img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News"></a>
+                    <h2 class="title-medium"><a href="blog-1.html">Government closes major protest cases with caveat: 'No protection for those...'</a></h2>
                     <div class="meta">
                         <span class="tag">INDIA NEWS</span>
                         
@@ -37,8 +42,8 @@
                 </article>
 
                 <article class="news-item mt-20">
-                    <a href="blog-2"><img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News"></a>
-                    <h2 class="title-medium"><a href="blog-2">Economic reforms: Blindness, paralysis amid political debate</a></h2>
+                    <a href="blog-2.html"><img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News"></a>
+                    <h2 class="title-medium"><a href="blog-2.html">Economic reforms: Blindness, paralysis amid political debate</a></h2>
                     <div class="meta">
                         <span class="tag">BUSINESS</span>
                         
@@ -49,8 +54,8 @@
             <!-- Center Column (Featured) -->
             <div class="column-center">
                 <article class="featured-news">
-                    <a href="blog-3"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Featured News"></a>
-                    <h1 class="title-large"><a href="blog-3">‘Pursue defamation proceedings’: Supreme Court's statement on reaction to abusive slogans</a></h1>
+                    <a href="blog-3.html"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Featured News"></a>
+                    <h1 class="title-large"><a href="blog-3.html">‘Pursue defamation proceedings’: Supreme Court's statement on reaction to abusive slogans</a></h1>
                     <p class="excerpt">The court also urged young protesters to be mindful of the language they use during demonstrations across the country.</p>
                     <div class="meta">
                         <span class="tag">INDIA NEWS</span>
@@ -62,8 +67,8 @@
             <!-- Right Column -->
             <div class="column-right">
                 <article class="news-item mt-20">
-                    <a href="blog-4"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News"></a>
-                    <h2 class="title-medium"><a href="blog-4">Better ride quality, lower fuel average: Ministry on new petrol policy</a></h2>
+                    <a href="blog-4.html"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="News"></a>
+                    <h2 class="title-medium"><a href="blog-4.html">Better ride quality, lower fuel average: Ministry on new petrol policy</a></h2>
                     <div class="meta">
                         <span class="tag">AUTO NEWS</span>
                         
@@ -74,22 +79,32 @@
         </div>
         
         <div style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
-            <a href="blog" style="display: inline-block; padding: 0.8rem 2.5rem; background: #000; color: #fff; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; transition: background 0.2s;">See All News</a>
+            <a href="blog.html" style="display: inline-block; padding: 0.8rem 2.5rem; background: #000; color: #fff; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; transition: background 0.2s;">See All News</a>
         </div>
     </main>
     <!-- Simple Footer -->
     <footer class="simple-footer">
         <div class="footer-top">
-            <a href="./" class="footer-logo">NewsDaily<span class="dot">.</span></a>
+            <a href="index.html" class="footer-logo">NewsDaily<span class="dot">.</span></a>
             <nav class="footer-nav">
-                <a href="./">HOME</a>
-                <a href="blog">BLOG</a>
-                <a href="contact">CONTACT US</a>
+                <a href="index.html">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="contact.html">CONTACT US</a>
             </nav>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 NewsDaily. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        if(hamburger) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('show-nav');
+            });
+        }
+    </script>
 </body>
 </html>
