@@ -466,6 +466,13 @@ h1, h2, h3, .main-logo {
     .archive-layout {
         grid-template-columns: 1fr;
     }
+    .blog-list-item {
+        flex-direction: column;
+    }
+    .blog-list-item img {
+        width: 100%;
+        height: auto;
+    }
     .footer-top {
         flex-direction: column;
         gap: 1.5rem;
