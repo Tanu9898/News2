@@ -201,11 +201,11 @@ h1, h2, h3, .main-logo {
 }
 
 .news-item img {
-    height: 180px;
+    height: auto;
 }
 
 .featured-news img {
-    height: 450px;
+    height: auto;
 }
 
 .mt-20 {
@@ -292,7 +292,7 @@ h1, h2, h3, .main-logo {
 
 .blog-list-item img {
     width: 280px;
-    height: 180px;
+    height: auto;
     object-fit: cover;
     border-radius: 4px;
 }
